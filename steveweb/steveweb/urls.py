@@ -19,6 +19,6 @@ urlpatterns += patterns(
         name = 'steveweb_login'),
 
     url(r'^logout/$', 'logout',
-        {'next_page': 'steveweb_home.html'},
+        {'next_page': 'main.html'},
         name = 'steveweb_logout'),
 )

@@ -81,4 +81,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
-TEMPLATE_URL = '/main/templates/'
+TEMPLATE_DIRS = ( os.path.join(BASE_DIR, 'templates'),)
+
+LOGIN_URL = 'steveweb_login'
+LOGOUT_URL = 'steveweb_logout'
+LOGIN_REDIRECT_URL = 'main'
