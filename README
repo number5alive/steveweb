@@ -1,0 +1,17 @@
+To use this project:
+
+1) create and activate a virtual env
+$ virtualenv -p /usr/bin/python3 myenv
+$ cd myenv
+$ . bin/activate
+
+2) check out this project to your virtual env
+(myenv)$ git clone <path> .
+
+3) install the necessary packages
+(myenv)$ pip install -r src/requirements.txt
+
+4) start it all running
+(myenv)$ python manage.py syncdb
+(myenv)$ python manage.py runserver
+
