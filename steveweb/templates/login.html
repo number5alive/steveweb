@@ -1,3 +1,5 @@
+{% load crispy_forms_tags %}
+
 <html>
     <head>
         <title>Please Login</title>
@@ -9,7 +11,7 @@
 
 	<form role="form" class="form-horizontal" method="post" action="{% url 'steveweb_login' %}">
             {% csrf_token %}
-            {{ form }}
+            {{ form|crispy }}
             <input class="btn btn-primary" type="submit" value="Login"/>
             <input type="hidden" name="next" value="{{ next }}" />
     </body>
