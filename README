@@ -1,4 +1,8 @@
-To use this project:
+-- Steve's playing around with Djano --
+Based (blatently copied?) from  Reindert-Jan Ekker's Tutorial on Pluralsight.com
+http://beta.pluralsight.com/courses/django-fundamental
+ 
+-- To use this project: --
 
 1) create and activate a virtual env
 $ virtualenv -p /usr/bin/python3 myenv

@@ -89,4 +89,4 @@ TEMPLATE_DIRS = ( os.path.join(BASE_DIR, 'templates'),)
 
 LOGIN_URL = 'steveweb_login'
 LOGOUT_URL = 'steveweb_logout'
-LOGIN_REDIRECT_URL = 'main_home'
+LOGIN_REDIRECT_URL = 'user_home'
