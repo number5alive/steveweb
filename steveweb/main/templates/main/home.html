@@ -1,10 +1,9 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Hello, World!</title>
-    </head>
-    <body>
-        <h1>Hello, World!</h1>
-        It is now {{date}}
-    </body>
-</html>
+{% extends "base.html" %}
+
+
+{% block content %}
+    <div class="jumbotron">
+        <p>Welcome to the Django fundamentals course.
+        This site was made with <a href="https://www.djangoproject.com/">Django</a> to show you how it's done. Enjoy!</p>
+    </div>
+{% endblock content %}
