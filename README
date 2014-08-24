@@ -12,8 +12,9 @@ $ . bin/activate
 (myenv)$ pip install -r src/requirements.txt
 
 4) install the (twitter) bootstrap styling files
-(myenv)$ cd src/steveweb
-(myenv)$ git clone https://github.com/twbs/bootstrap.git
+(myenv)$ mkdir -p src/steveweb/static/bootstrap
+(myenv)$ cd !$
+(myenv)$ git clone https://github.com/twbs/bootstrap.git .
 
 5) start it all running
 (myenv)$ python manage.py syncdb
