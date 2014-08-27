@@ -1,4 +1,8 @@
-To use this project:
+-- Steve's playing around with Djano --
+Based (blatently copied?) from  Reindert-Jan Ekker's Tutorial on Pluralsight.com
+http://beta.pluralsight.com/courses/django-fundamental
+ 
+-- To use this project: --
 
 1) create and activate a virtual env
 $ virtualenv -p /usr/bin/python3 myenv
@@ -11,7 +15,12 @@ $ . bin/activate
 3) install the necessary packages
 (myenv)$ pip install -r src/requirements.txt
 
-4) start it all running
+4) install the (twitter) bootstrap styling files
+(myenv)$ mkdir -p src/steveweb/static/bootstrap
+(myenv)$ cd !$
+(myenv)$ git clone https://github.com/twbs/bootstrap.git .
+
+5) start it all running
 (myenv)$ python manage.py syncdb
 (myenv)$ python manage.py runserver
 

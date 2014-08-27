@@ -9,6 +9,7 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'main.views.home', name='main_home'),
+    url(r'^user/', include('user.urls')),
 )
 
 urlpatterns += patterns(
@@ -19,6 +20,6 @@ urlpatterns += patterns(
         name = 'steveweb_login'),
 
     url(r'^logout/$', 'logout',
-        {'next_page': 'main.html'},
+        {'next_page': '/'},
         name = 'steveweb_logout'),
 )
