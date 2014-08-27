@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'main',
     'user',
     'crispy_forms',
+    'sixfournine',
 )
 
 MIDDLEWARE_CLASSES = (
