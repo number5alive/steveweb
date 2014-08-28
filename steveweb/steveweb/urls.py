@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'main.views.home', name='main_home'),
     url(r'^user/', include('user.urls')),
+    url(r'^649/', include('sixfournine.urls')),
 )
 
 urlpatterns += patterns(
