@@ -1,12 +1,29 @@
 {% extends "base.html" %}
 
-
 {% block content %}
+ 
     <div class="jumbotron">
-        <p>Welcome to Steve's Shitty Web Portal...
+        <p>Welcome to Steve's Web Portal...
         I'm not a web monkey, so don't go looking for anything pretty or something that even remotely works.</p>
-        <p style="margin-top: 1em">
-            <a  href="{% url 'steveweb_login' %}">Click here to login</a> or <a  href="{% url 'user_signup' %}">Sign up!</a>
-        </p>
     </div>
+     
+    <div class="page-header">
+        <h1>Pages</h1>
+    </div>
+     
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table">
+                <tr>
+                    <th><img src="static/nhl.jpg" class="img-thumbnail" alt="NHL Weekend Pool"></th>
+                    <th><img src="static/649.jpg" class="img-thumbnail" alt="649 Club"></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+     
+    <p style="margin-top: 1em">
+        <a  href="{% url 'steveweb_login' %}">Click here to login</a> or <a  href="{% url 'user_signup' %}">Sign up!</a>
+    </p>
+     
 {% endblock content %}
