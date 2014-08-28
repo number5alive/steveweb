@@ -4,21 +4,26 @@ http://beta.pluralsight.com/courses/django-fundamental
  
 -- To use this project: --
 
+0) install the packages you'll need
+# NOTE: python3.3+ needed for crispy-forms, python3.4-dev and build-essentials needed for the python Pillow package (ImageForm)
+$ sudo add-apt-repository ppa:fkrull/deadsnakes
+$ sudo apt-get update
+$ sudo apt-get install build-essentials virtualenv python3.4 python3.4-dev
+
 1) create and activate a virtual env
-$ virtualenv -p /usr/bin/python3 myenv
+$ virtualenv --no-site-packages -p /usr/bin/python3 myenv
 $ cd myenv
 $ . bin/activate
 
 2) check out this project to your virtual env
-(myenv)$ git clone <path> .
+(myenv)$ git clone <path> src
 
 3) install the necessary packages
 (myenv)$ pip install -r src/requirements.txt
 
 4) install the (twitter) bootstrap styling files
-(myenv)$ mkdir -p src/steveweb/static/bootstrap
-(myenv)$ cd !$
-(myenv)$ git clone https://github.com/twbs/bootstrap.git .
+(myenv)$ git clone https://github.com/twbs/bootstrap.git static/bootstrapASDF
+(myenv)$ mv bootstrap/dist bootstrap
 
 5) start it all running
 (myenv)$ python manage.py syncdb
