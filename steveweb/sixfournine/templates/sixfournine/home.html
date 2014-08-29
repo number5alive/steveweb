@@ -1,9 +1,46 @@
 {% extends "base.html" %}
 
 {{% block title %}
-Overview for {{ user.username }}
+649 Club Home
 {% endblock title %}
 
+{% block styling %}
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+     
+    <!-- Custom styles for this template -->
+    <link href="/static/bootstrap/css/carousel.css" rel="stylesheet">
+{% endblock styling %}
+ 
 {% block content %}
     <h1>649 Club Home!!!</h1>
+     
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Winnings Balance">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Team Winnings Balance</h1>
+              <p>$$$</p>
+            </div>
+          </div>
+        </div>
+        {% include "sixfournine/ticket_carousel_snippet.html"
+            with ticket_list=all_games %}
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
 {% endblock content %}
