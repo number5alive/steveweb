@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'user',
     'crispy_forms',
     'sixfournine',
+    'nhl',
 )
 
 MIDDLEWARE_CLASSES = (
